@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+@layer base {
+    body {
+        @apply bg-slate-700 text-amber-50 font-cmu-type
+    }
+}
+
+@theme {
+    --font-cmu-type: 'CMU Typewriter', sans-serif;
+
+    --color-bg: var(--bg-main);
+    --color-text: var(--text-main);
+    --color-menu: var(--menu);
+}
+
+:root {
+    --bg-main: 'slate-700';
+    --text-main: 'amber-50';
+    --menu: 'emerald-200';
+}
+
+[data-theme="ore"] {
+    --bg-main: 'slate-700';
+    --text-main: 'amber-50';
+    --menu: 'emerald-200';
+}
+
+[data-theme="somethingelse"] {
+    --bg-main: 'slate-700'
+}
+
+
+
+/* --------------------------- ALL THE FONT LOADING GOSH ------------------------------- */
+
+@font-face {
+    font-family: 'CMU Typewriter';
+    src: url('/typewriter/cmunbtl.ttf') format('truetype');
+    font-weight: lighter;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'CMU Typewriter';
+    src: url('/typewriter/cmunbto.ttf') format('truetype');
+    font-weight: bold;
+    font-style: oblique;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'CMU Typewriter';
+    src: url('/typewriter/cmunit.ttf') format('truetype');
+    font-weight: lighter;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'CMU Typewriter';
+    src: url('/typewriter/cmuntb.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'CMU Typewriter';
+    src: url('/typewriter/cmuntt.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'CMU Typewriter';
+    src: url('/typewriter/cmuntx.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}

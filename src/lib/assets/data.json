@@ -1,0 +1,19 @@
+{   
+    "chapter1": {
+        "chapter": "Chapter 1",
+        "title": "A Tale of Two Birdies",
+        "content": "chapter1.txt"
+    },
+
+    "chapter2": {
+        "chapter": "Chapter 2",
+        "title": "The Second Day (placeholder)",
+        "content": "chapter2.txt"
+    },
+
+    "chapter3": {
+        "chapter": "Chapter 3",
+        "title": "Late Night (Reading)",
+        "content": "chapter3.txt"
+    }
+}
