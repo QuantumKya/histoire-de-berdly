@@ -1,3 +1,7 @@
+<script>
+    import { resolve, asset } from '$app/paths';
+</script>
+
 <div class="m-5 top-[50%] flex flex-col justify-center items-center">
 
     <h1 class="text-3xl">QuantumKya's</h1>
@@ -15,7 +19,7 @@
 
 <div class="absolute left-[65%] top-[35%] text-lg p-5 border-2 border-dashed rounded-2xl">
 
-    <img src="/blackbeard.png" alt="Blackbeard Writing" class="max-h-50">
+    <img src={asset('blackbeard.png')} alt="Blackbeard Writing" class="max-h-50">
 
 </div>
 
@@ -25,9 +29,9 @@
     <p class="text-xs">I don't have a title for it yet...</p>
 
     <ul class="mt-3 ml-3">
-        <li><a href="/berdly/chapter1">Chapter 1 &mdash; A Tale of Two Birdies</a></li>
-        <li><a href="/berdly/chapter1">Chapter 2 &mdash;</a></li>
-        <li><a href="/berdly/chapter1">Chapter 3 &mdash; Late Night (Reading)</a></li>
+        <li><a href={resolve("berdly/chapter1")}>Chapter 1 &mdash; A Tale of Two Birdies</a></li>
+        <li><a href={resolve("berdly/chapter2")}>Chapter 2 &mdash;</a></li>
+        <li><a href={resolve("berdly/chapter3")}>Chapter 3 &mdash; Late Night (Reading)</a></li>
     </ul>
 
 </div>

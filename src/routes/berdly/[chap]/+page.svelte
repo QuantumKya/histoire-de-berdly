@@ -8,7 +8,9 @@
     <h2 class="text-2xl mb-5">{data.item.title}</h2>
     
     {#each data.lines as leContenu}
-        <p>{leContenu}</p>
+        <p>
+            {leContenu.trim() === '' ? '\u00a0' : leContenu}
+        </p>
     {/each}
 
 </div>
